@@ -6,7 +6,8 @@ from django.conf import settings
 class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Image
-        fields = ('id', 'title', 'slug', 'author', 'status')
+        fields = ('category', 'id', 'title', 'slug',
+                  'image', 'excerpt', 'author', 'status')
 
 
 class UserRegisterSerializer(serializers.ModelSerializer):

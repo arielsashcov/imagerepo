@@ -3,6 +3,7 @@ import './App.css';
 import Images from './components/images/images';
 import ImageLoadingComponent from './components/images/ImageLoading';
 import axiosInstance from './axios';
+import Link from '@material-ui/core/Link';
 
 function App() {
 	const ImageLoading = ImageLoadingComponent(Images);

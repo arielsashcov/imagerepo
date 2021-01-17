@@ -64,6 +64,16 @@ function Header() {
 						onChange={(newValue) => setData({ search: newValue })}
 						onRequestSearch={() => goSearch(data.search)}
 					/>
+                                        <Button
+						href="#"
+						color="secondary"
+						variant="outlined"
+						className={classes.link}
+						component={NavLink}
+						to="/admin"
+					>
+						Admin
+					</Button>
 					<nav>
 						<Link
 							color="textPrimary"
