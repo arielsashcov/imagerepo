@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import Images from './components/images/images';
+import Images from './components/admin/images';
 import ImageLoadingComponent from './components/images/ImageLoading';
 import axiosInstance from './axios';
 
-function App() {
+function Admin() {
 	const ImageLoading = ImageLoadingComponent(Images);
 	const [appState, setAppState] = useState({
 		loading: true,
@@ -18,6 +18,7 @@ function App() {
 			console.log(res.data);
 		});
 	}, [setAppState]);
+
 	return (
 		<div className="App">
 			<h1>Image Repository</h1>
@@ -25,4 +26,4 @@ function App() {
 		</div>
 	);
 }
-export default App;
+export default Admin;
